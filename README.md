@@ -1,1 +1,1 @@
-# React Org Chart Tutorial
+# React Org Chart Example

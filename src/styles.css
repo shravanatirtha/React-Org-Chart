@@ -23,7 +23,9 @@
   -ms-user-select: none;
   user-select: none;
   padding-left: 60px;
+  padding-right: 10px;
 }
+
 .follow {
   float: right;
   margin-right: 79px;
@@ -44,10 +46,6 @@ body {
   margin: 7% auto;
 }
 
-.follow a {
-  color: #131313;
-  text-decoration: none;
-}
 
 .org-tree ul {
   padding-top: 20px;
@@ -78,14 +76,14 @@ body {
   position: absolute;
   top: 0;
   right: 50%;
-  border-top: 1px solid #ccc;
+  border-top: 10px solid #ccc;
   width: 50%;
   height: 20px;
 }
 .org-tree li::after {
   right: auto;
   left: 50%;
-  border-left: 1px solid #ccc;
+  border-left: 10px solid #ccc;
 }
 
 .org-tree li:only-child::after,
@@ -103,7 +101,7 @@ body {
 }
 
 .org-tree li:last-child::before {
-  border-right: 1px solid #ccc;
+  border-right: 10px solid #ccc;
   border-radius: 0 5px 0 0;
   -webkit-border-radius: 0 5px 0 0;
   -moz-border-radius: 0 5px 0 0;
@@ -119,13 +117,13 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  border-left: 1px solid #ccc;
+  border-left: 10px solid #ccc;
   width: 0;
   height: 20px;
 }
 
 .org-tree li a {
-  border: 1px solid #ccc;
+  border: 10px solid #ccc;
   padding: 5px 10px;
   text-decoration: none;
   color: #666;
@@ -136,7 +134,6 @@ body {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -146,7 +143,7 @@ body {
 .org-tree li a:hover + ul li a {
   background: #c8e4f8;
   color: #000;
-  border: 1px solid #94a0b4;
+  border: 10px solid #677181;
 }
 
 .org-tree li a:hover + ul li::after,
@@ -158,32 +155,16 @@ body {
 
 .card {
   position: relative;
-  padding-top: 50px;
-  /* width: 300px; */
+  padding-top: 10px;
+
 }
 
-.card .image {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -10px;
-  z-index: 100;
-}
-.card .image img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  border: 13px solid #96f6b7;
-}
 .card .card-body {
   background: #fff;
-  height: 56px;
+  height: max-content;
   text-align: center;
   width: 300px;
-  padding-top: 60px;
+  padding-top: 10px;
   border-radius: 16px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -195,16 +176,17 @@ body {
 
 .card .card-body h2 {
   font-weight: 600;
-  line-height: 20px;
+  line-height: 30px;
 }
 .card .card-body p {
   line-height: 20px;
   font-size: small;
+  text-align: left;
 }
 .card .card-footer {
   padding: 3px;
   background: #96f6b7;
-  text-align: center;
+  text-align: left;
   bottom: 0;
   position: relative;
   width: 295px;
